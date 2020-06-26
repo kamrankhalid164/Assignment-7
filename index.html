@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body> 
+        <div class = title >Calculator
+        <table > 
+           <tr> 
+              <td id="screen" colspan="4"><input type="text" id="result" 
+                onblur="this.style.backgroundColor = '#9e004f'"
+                onfocus="this.style.backgroundColor = 'white' "/></td> 
+           </tr> 
+           <tr>
+            <td colspan="4"><input type="button" value="C"  onclick="clr()"  /> </td> 
+
+           </tr>
+           <tr> 
+              <td><input type="button" value="1" onclick="get_num('1')"/> </td> 
+              <td><input type="button" value="2" onclick="get_num('2')"/> </td> 
+              <td><input type="button" value="3" onclick="get_num('3')"/> </td> 
+              <td><input type="button" value="/" onclick="get_num('/')"/> </td> 
+           </tr> 
+           <tr> 
+              <td><input type="button" value="4" onclick="get_num('4')"/> </td> 
+              <td><input type="button" value="5" onclick="get_num('5')"/> </td> 
+              <td><input type="button" value="6" onclick="get_num('6')"/> </td> 
+              <td><input type="button" value="-" onclick="get_num('-')"/> </td> 
+           </tr> 
+           <tr> 
+              <td><input type="button" value="7" onclick="get_num('7')"/> </td> 
+              <td><input type="button" value="8" onclick="get_num('8')"/> </td> 
+              <td><input type="button" value="9" onclick="get_num('9')"/> </td> 
+              <td><input type="button" value="+" onclick="get_num('+')"/> </td> 
+           </tr> 
+           <tr> 
+              <td><input type="button" value="." onclick="get_num('.')"/> </td> 
+              <td><input type="button" value="0" onclick="get_num('0')"/> </td> 
+              <td><input type="button" value="=" onclick="solve()"/> </td> 
+              <td><input type="button" value="*" onclick="get_num('*')"/> </td> 
+           </tr> 
+        </table> 
+    </div> 
+     </body> 
+  </html>
+    
+</body>
+
+<script src="app.js"></script>
+</html>
